@@ -6,14 +6,20 @@ class Atvd8{
 
         System.out.print("Número de vezes a ser encontrado: ");
         int ph = ler.nextInt();
-        long nph = 1;
-        long n1ph = nph + 1; 
-        System.out.print("1 ");
-        for(int i=ph-1 ; i>=1 ; i--){
-            n1ph -= nph;
-            nph += n1ph;
-            System.out.print(nph + " ");
+        long n1 = 1;
+        long n2 = 1;
+        if(ph < 2){
+            System.out.print("1");
         }
+        else{
+            System.out.print("1, 1");
 
+            for(int i=0 ; i<ph-2 ; i++){
+                long n3 = n1 + n2;
+                System.out.print(", " + n3);
+                n1 = n2;
+                n2 = n3;
+            }
+        }
     }
-}
+}8

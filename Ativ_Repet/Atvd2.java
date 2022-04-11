@@ -6,8 +6,8 @@ class Atvd2{
         Scanner ler = new Scanner(System.in);
 
         // System.out.print("Feito");
-         String login = "a";
-         String senha = "a";
+        String login = ler.next();
+        String senha = ler.next();
         // System.out.print("Feito-");
 
         for(int i=0; i<=2; i++){
@@ -19,8 +19,12 @@ class Atvd2{
             // System.out.print("Feito---");
 
             if(login.equals(l) && senha.equals(s)){
-                System.out.print("Bem vindo(a)" + login);
+                System.out.print("Bem vindo(a) " + login + "!!");
                 break;
+            }
+            if(i == 2){
+                System.out.println("Senha bloqueada.");
+                System.exit(0);
             }
             System.out.println("Login e/ou senha estão errados, repita por favor.");
         }

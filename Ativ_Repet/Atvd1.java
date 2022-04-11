@@ -8,15 +8,15 @@ class Atvd1{
             System.out.println("Escolha um número");
             int N = ler.nextInt();
             if (N % 2 == 0){
-                System.out.println("É par!!!!!");
+                System.out.println("Eh par!!!!!");
             }
             else{
-                System.out.println("É ímpar!!!");
+                System.out.println("Eh impar!!!");
             }
             System.out.print("Quer continuar?(Sim/Yes ou não/Not): "); 
             String ns =ler.next();
             if(!ns.equals("Yes") && !ns.equals("yes") && !ns.equals("Sim") && !ns.equals("sim") && !ns.equals("s") && !ns.equals("S") && !ns.equals("Y") && !ns.equals("y")){
-                System.exit(0);
+                break;
             }
         }
     }
