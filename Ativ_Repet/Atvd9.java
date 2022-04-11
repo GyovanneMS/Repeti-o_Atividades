@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Atvd8{
+class Atvd9{
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
 
@@ -12,13 +12,14 @@ class Atvd8{
             System.out.print("1");
         }
         else{
-            System.out.print("1, 1");
+            System.out.print("1, 1 --> 1");
 
             for(int i=0 ; i<ph-2 ; i++){
                 long n3 = n1 + n2;
                 System.out.print(", " + n3);
                 n1 = n2;
                 n2 = n3;
+                System.out.print("-->" + (double)n2/n1);
             }
         }
     }
