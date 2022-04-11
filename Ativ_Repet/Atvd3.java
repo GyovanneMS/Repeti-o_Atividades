@@ -3,12 +3,21 @@ import java.util.Scanner;
 class Atvd3{
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
+        int base = 0;
+        int expoente = 0;
+        long conta = 0;
 
-        System.out.print("A base:");
-        int base = ler.nextInt();
-        System.out.print("O expoente:");
-        int expoente = ler.nextInt();
-        long conta = base;
+        while(true){
+            System.out.print("A base:");
+            base = ler.nextInt();
+            System.out.print("O expoente:");
+            expoente = ler.nextInt();
+            conta = base;
+            if(base >= 0 && expoente >= 0){
+                break;
+            }
+        }
+
         if(expoente == 0){
             System.out.println("O valor eh: 1");
             System.exit(0);

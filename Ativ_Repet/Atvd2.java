@@ -5,18 +5,14 @@ class Atvd2{
 
         Scanner ler = new Scanner(System.in);
 
-        // System.out.print("Feito");
         String login = ler.next();
         String senha = ler.next();
-        // System.out.print("Feito-");
 
         for(int i=0; i<=2; i++){
-            // System.out.print("Feito--");
             System.out.print("Login: ");
             String l = ler.next();
             System.out.print("Senha: ");
             String s = ler.next();
-            // System.out.print("Feito---");
 
             if(login.equals(l) && senha.equals(s)){
                 System.out.print("Bem vindo(a) " + login + "!!");
