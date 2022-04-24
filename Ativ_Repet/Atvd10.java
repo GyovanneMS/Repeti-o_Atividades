@@ -7,7 +7,7 @@ class Atvd10{
 
         while(true){
             System.out.print("Escolha um numero: ");
-            int n = ler.nextInt();
+            n = ler.nextInt();
 
             if(n >= 2){
                 System.out.println("Invalido, repita");
@@ -22,6 +22,5 @@ class Atvd10{
             }
         }
         System.out.print("Eh primo.");
-        break;
     }
 }
